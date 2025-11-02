@@ -9,12 +9,27 @@ input { font-size: 1em; padding: 4px 12px; }
 /* Notify */
 .notify-div {
   padding: 15px;
-  border: 1px solid #d6e9c6;
-  border-radius: 4px;
+  border-radius: 8px;
   color: #3c763d;
-  background-color: #dff0d8;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+.notify-div.info {
+  background-color: #6c8cf6;
+}
+.notify-div.positive {
+  background-color: #85d970;
+}
+.notify-div.negative {
+  background-color: #fa6161;
+}
+.notify-div > div {
+    min-width: 300px;
 }
 .notify-div > i {
     float: right;
     cursor: pointer;
+    font-style: normal;
+    color: #777;
 }

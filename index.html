@@ -15,8 +15,14 @@
       <article>
         <section>
           <input type="button" 
-            onclick="notify('Hi! notify')"
+            onclick="notify('Hi! notify information', undefined, 0)"
             value="show Notify">
+          <input type="button" 
+            onclick="notify('Hi! error notify', 'negative', 0)"
+            value="error">
+          <input type="button" 
+            onclick="notify('Hi! success notify', 'positive', 0)"
+            value="success">
         </section>
       </article>
     </main>
