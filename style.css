@@ -1,3 +1,20 @@
-html, body, h1, h2 { margin:0; padding: 0; }
-header { padding: 20px; }
-main { padding: 20px; }
+html, body { margin:0; padding: 0; }
+html { background-color: #222;}
+body { color: #999; font-family:'Gill Sans' }
+h1, h2 { margin:0; padding: 0; font-weight: normal;}
+header { padding: 20px 20px 0; }
+main { padding: 10px 20px; }
+input { font-size: 1em; padding: 4px 12px; }
+
+/* Notify */
+.notify-div {
+  padding: 15px;
+  border: 1px solid #d6e9c6;
+  border-radius: 4px;
+  color: #3c763d;
+  background-color: #dff0d8;
+}
+.notify-div > i {
+    float: right;
+    cursor: pointer;
+}
