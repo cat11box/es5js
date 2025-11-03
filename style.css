@@ -12,11 +12,15 @@ input { font-size: 1em; padding: 4px 12px; }
   border-radius: 8px;
   color: #3c763d;
   position: fixed;
-  top: 20px;
+  top: -500px;
   right: 20px;
+  transition: margin-top ease-out 0.3s;
+}
+.notify-div.open {
+    margin-top: 20px;
 }
 .notify-div.info {
-  background-color: #6c8cf6;
+  background-color: #6ca1f6;
 }
 .notify-div.positive {
   background-color: #85d970;
@@ -26,6 +30,8 @@ input { font-size: 1em; padding: 4px 12px; }
 }
 .notify-div > div {
     min-width: 300px;
+    max-width: 70vw;
+    white-space: pre-wrap;
 }
 .notify-div > i {
     float: right;
