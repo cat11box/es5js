@@ -1,5 +1,5 @@
 html, body { margin:0; padding: 0; }
-html { background-color: #222;}
+html { background-color: #ffffff;}
 body { color: #999; font-family:'Gill Sans' }
 h1, h2 { margin:0; padding: 0; font-weight: normal;}
 header { padding: 20px 20px 0; }
@@ -15,15 +15,18 @@ input { font-size: 1em; padding: 4px 12px; }
   top: -500px;
   right: 20px;
   transition: margin-top ease-out 0.3s;
+  color: #fff;
+  box-shadow: 0 0 8px #777;
+  z-index: 1000;
 }
 .notify-div.open {
     margin-top: 20px;
 }
 .notify-div.info {
-  background-color: #6ca1f6;
+  background-color: #3d7ce1;
 }
 .notify-div.positive {
-  background-color: #85d970;
+  background-color: #2bc22b;
 }
 .notify-div.negative {
   background-color: #fa6161;
@@ -37,5 +40,6 @@ input { font-size: 1em; padding: 4px 12px; }
     float: right;
     cursor: pointer;
     font-style: normal;
-    color: #777;
+    color: #eee;
+    font-size: 1.2em;
 }
