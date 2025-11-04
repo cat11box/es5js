@@ -14,6 +14,7 @@
     <main>
       <article>
         <section>
+          
           <input type="button" 
             onclick="notify('Hi! notify information lorem   \n test\ntest\nййййййййййй уууууууууу сообщение 12345 555 ввыввы ыввывывййййййййййй уууууууууу сообщение 12345 555 ввыввы ыввывыв ййййййййййй уууууууууу сообщение 12345 555 ввыввы ыввывыв'
                 , undefined, 0)"
@@ -39,6 +40,18 @@
             })"
             value="confirm2">
         </section>
+
+        <section>
+          <!--[if !IE]-->
+            <input type="color" name="clr1" value="#5566CC" style="width: 50px; height: 28px;"/>
+          <!--[endif]-->
+          <!--[if IE]>
+              <input type="text" name="clr1" value="" style="display:none"/>
+              <button onclick="var s = Dlg.ChooseColorDlg(clr1.value); window.event.srcElement.style.color = s; clr1.value = s">&#9608;&#9608;&#9608;&#9608;&#9608;</button>
+              <object id="Dlg" classid="CLSID:3050F819-98B5-11CF-BB82-00AA00BDCE0B" width="0" height="0"></object>
+          <![endif]-->
+        </section>
+
       </article>
     </main>
     <footer>
