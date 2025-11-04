@@ -67,7 +67,7 @@ const notify = closureMakeNotify();
 
 
 /* begin confirm *******************/
-// замыкание чтобы не засорять контекст 
+// замыкание 
 function closureConfirm() {
 
     let confirmDiv;
@@ -122,14 +122,18 @@ function closureConfirm() {
 
     }
 }
-// функция confirm 
+// функция для замены confirm
+// вызывает коллбэки по нажатию кнопок да/нет 
 // параметры:
-// 1. options: String - текст вопроса | Object { 
+// 1. options: 
+//    String - текст вопроса 
+//    или 
+//    Object { 
 //      message: String - текст вопроса, 
 //      yestext = 'Да': String - текст на 1 кнопке, 
 //      notext = 'Нет': String - текст на 2 кнопке
 //    }
 // 2. yesCallback: Function - клик по 1 кнопке
 // 3. noCallback: Function - клик по 2 кнопке
-const cbconfirm = closureConfirm();
+const confirmcb = closureConfirm();
 /* end confirm *******************/

@@ -53,6 +53,7 @@ margin-top: 20px;
     top: 0; right: 0; left: 0; bottom: 0;
     background-color: rgba(128,128,128,0.8);
     display: flex;
+    z-index: 1001;
 }
 
 .confirm-dialog {
@@ -69,6 +70,9 @@ margin-top: 20px;
     font-size: 1.2em;
 }
 
+.confirm-dialog div:first-child {
+    white-space: pre-wrap;
+}
 .confirm-dialog div:last-child {
     clear: both;
     padding-top: 10px;
