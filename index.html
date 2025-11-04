@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <h1>ES5</h1>
+      <h1>ie11 test</h1>
     </header>
     <main>
       <article>
@@ -24,6 +24,20 @@
           <input type="button" 
             onclick="notify('Hi! success notify', 'positive')"
             value="success">
+          <input type="button" 
+            onclick="notify(undefined)"
+            value="null">
+        </section>
+ 
+        <section>
+          <input type="button" 
+            onclick="confirm('Hi! notify information lorem')"
+            value="confirm">
+          <input type="button" 
+            onclick="cbconfirm('Hi! confirm', function () {
+                console.log('YES');
+            })"
+            value="confirm2">
         </section>
       </article>
     </main>

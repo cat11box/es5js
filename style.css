@@ -1,10 +1,12 @@
 html, body { margin:0; padding: 0; }
-html { background-color: #ffffff;}
+html { background-color: #333;}
 body { color: #999; font-family:'Gill Sans' }
 h1, h2 { margin:0; padding: 0; font-weight: normal;}
 header { padding: 20px 20px 0; }
 main { padding: 10px 20px; }
 input { font-size: 1em; padding: 4px 12px; }
+section { margin-top: 10px; margin-bottom: 10px; }
+section input { margin-right: 6px; }
 
 /* Notify */
 .notify-div {
@@ -16,11 +18,11 @@ input { font-size: 1em; padding: 4px 12px; }
   right: 20px;
   transition: margin-top ease-out 0.3s;
   color: #fff;
-  box-shadow: 0 0 8px #777;
+  box-shadow: 0 0 8px #333;
   z-index: 1000;
 }
 .notify-div.open {
-    margin-top: 20px;
+margin-top: 20px;
 }
 .notify-div.info {
   background-color: #3d7ce1;
@@ -42,4 +44,39 @@ input { font-size: 1em; padding: 4px 12px; }
     font-style: normal;
     color: #eee;
     font-size: 1.2em;
+}
+
+/* Confirm */
+
+.confirm-background {
+    position: fixed;
+    top: 0; right: 0; left: 0; bottom: 0;
+    background-color: rgba(128,128,128,0.8);
+    display: flex;
+}
+
+.confirm-dialog {
+    margin: auto;
+    background-color: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    min-width: 20em;
+}
+.confirm-dialog > i {
+    float: right;
+    cursor: pointer;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+.confirm-dialog div:last-child {
+    clear: both;
+    padding-top: 10px;
+    display: flex;
+    justify-content: end;
+}
+.confirm-dialog button {
+    margin: 10px 0 0 10px;
+    padding: 4px 12px;
+    font-size: 1em;
 }
